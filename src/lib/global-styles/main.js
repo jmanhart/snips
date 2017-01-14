@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 
-// export const Test01 = StyleSheet.create({
+// export const Test01 = Object.create({
 //
 // });
 
