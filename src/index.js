@@ -16,8 +16,8 @@ const routes = (
   <Route path="/personal-portfolio-17" mapMenuTitle="Home" component={App}>
     <IndexRoute component={Home} />
 
-    <Route path="example" mapMenuTitle="Example" component={ExampleComponent}>
-      <Route path="two-deep" mapMenuTitle="Two Deep" component={ExampleTwoDeepComponent} />
+    <Route path="/personal-portfolio-17/example" mapMenuTitle="Example" component={ExampleComponent}>
+      <Route path="/personal-portfolio-17/two-deep" mapMenuTitle="Two Deep" component={ExampleTwoDeepComponent} />
 
     </Route>
 
