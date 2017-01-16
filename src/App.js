@@ -12,7 +12,7 @@ export default class App extends Component{
     render(){
         return(
             <div style={s.root}>
-                <h1 style={s.title}>Its Going good! yay</h1>
+                <h1 style={s.title}>2017</h1>
                 {this.props.children}
             </div>
         )

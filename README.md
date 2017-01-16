@@ -1,8 +1,21 @@
-# Single Page Apps for GitHub Pages
+# Personal Site 2017
 
-[Live example][liveExample]  
+[Live Site][LiveSite]  
 
-This is a lightweight solution for deploying single page apps with [GitHub Pages][ghPagesOverview]. You can easily deploy a [React][react] single page app with [React Router][reactRouter] `browserHistory`, like the one in the [live example][liveExample], or a single page app built with any frontend library or framework.
+The is the 2017 personal site for John Manhart. Build using [React][react], [Webpack][webpackProduction], and [Github Pages][ghPagesOverview].
+
+####Production for Pages
+    - Set [`pathPrefix` to `true` in the `404.html` file][pathPrefix] in order to keep `/repo-name` in the path after the redirect
+    - Add your `repo-name` to the absolute path of assets in `index.html`
+      - Change the [bundle.js src][indexHtmlSPA] to `"/repo-name/build/bundle.js"`
+    - If you are using React Router, you'll need to add the `repo-name` prefix to your routes and links, for example:
+      - `<Route path="/repo-name/about" component={About} />`
+      - `<Link to="/repo-name/about">About</Link>`
+    - To publish run `webpack -p` to update the `bundle.js` file.
+    - Commit and push it!
+
+
+<!-- This is a lightweight solution for deploying single page apps with [GitHub Pages][ghPagesOverview]. You can easily deploy a [React][react] single page app with [React Router][reactRouter] `browserHistory`, like the one in the [live example][liveExample], or a single page app built with any frontend library or framework.
 
 #### Why it's necessary
 GitHub Pages doesn't natively support single page apps. When there is a fresh page load for a url like `example.tld/foo`, where `/foo` is a frontend route, the GitHub Pages server returns 404 because it knows nothing of `/foo`.
@@ -80,11 +93,14 @@ I have included `webpack-dev-server` for testing changes locally. It can be acce
 #### Miscellaneous
 - The `.nojekyll` file in this repo [turns off Jekyll for GitHub Pages][nojekyll]
 - Need form submission on your static site? Use [Formspree][formspree]
-- One of the great things about the GitHub Pages CDN is that all files are automatically compressed with gzip, so no need to worry about compressing your JavaScript, HTML or CSS files for production
+- One of the great things about the GitHub Pages CDN is that all files are automatically compressed with gzip, so no need to worry about compressing your JavaScript, HTML or CSS files for production -->
 
+
+<!-- manhart -->
+[LiveSite]: https://jmanhart.github.io/personal-portfolio-17/
 
 <!-- links to within repo -->
-[404html]: https://github.com/rafrex/spa-github-pages/blob/gh-pages/404.html
+<!-- [404html]: https://github.com/rafrex/spa-github-pages/blob/gh-pages/404.html
 [pathPrefix]: https://github.com/rafrex/spa-github-pages/blob/gh-pages/404.html#L24
 [indexHtmlScript]: https://github.com/rafrex/spa-github-pages/blob/gh-pages/index.html#L58
 [indexHtmlSPA]: https://github.com/rafrex/spa-github-pages/blob/gh-pages/index.html#L113
@@ -94,7 +110,7 @@ I have included `webpack-dev-server` for testing changes locally. It can be acce
 [favicon]: https://github.com/rafrex/spa-github-pages/blob/gh-pages/index.html#L34
 [googleAnalytics]: https://github.com/rafrex/spa-github-pages/blob/gh-pages/index.html#L90
 [webpackConfigOverload]: https://github.com/rafrex/spa-github-pages/blob/gh-pages/webpack.config.babel.js#L21
-[startScript]: https://github.com/rafrex/spa-github-pages/blob/gh-pages/package.json#L6
+[startScript]: https://github.com/rafrex/spa-github-pages/blob/gh-pages/package.json#L6 -->
 
 <!-- links to github docs -->
 [ghPagesOverview]: https://pages.github.com/
