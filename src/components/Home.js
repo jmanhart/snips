@@ -27,18 +27,10 @@ function Home() {
         use this boilerplate to deploy your own single page app using GitHub Pages.
       </p>
       <div style={s.pageLinkContainer}>
-        <Interactive
-          as={Link}
-          {...s.link}
-          to="/example"
-        >Example page</Interactive>
+          <Link to="/example">Example page</Link>
       </div>
       <div style={s.pageLinkContainer}>
-        <Interactive
-          as={Link}
-          {...s.link}
-          to="/example/two-deep?field1=foo&field2=bar#boom!"
-        >Example two deep with query and hash</Interactive>
+          <Link to="personal-portfolio-17/two-deep">Example two deep with query and hash</Link>
       </div>
     </div>
   );
