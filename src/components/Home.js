@@ -4,27 +4,13 @@ import { Link } from 'react-router';
 import s from '../styles/home.style';
 
 function Home() {
-  const repoReadmeLink = text => (
-    <Interactive
-      as="a"
-      {...s.link}
-      href="https://github.com/rafrex/spa-github-pages#readme"
-    >{text}</Interactive>
-  );
-
   return (
     <div>
       <p style={s.p}>
-        This is an example single page app built
-        with React and React&nbsp;Router using {' '}
-        {s.code('browserHistory')}. Navigate with the links below and
-        refresh the page or copy/paste the url to test out the redirect
-        functionality deployed to overcome GitHub&nbsp;Pages incompatibility
-        with single page apps (like this one).
+        Meggings small batch 8-bit single-origin coffee dreamcatcher venmo. Fashion axe four dollar toast iPhone knausgaard vape, migas 90's pickled heirloom bespoke godard everyday carry chicharrones.
       </p>
       <p style={s.p}>
-        Please see the {repoReadmeLink('repo readme')} for instructions on how to
-        use this boilerplate to deploy your own single page app using GitHub Pages.
+        Twee put a bird on it woke, aesthetic 3 wolf moon drinking vinegar bicycle rights YOLO hot chicken waistcoat. Celiac DIY fixie, af truffaut ramps 90's chia knausgaard gochujang viral microdosing trust fund.
       </p>
       <div style={s.pageLinkContainer}>
           <Link to="/example">Example page</Link>
