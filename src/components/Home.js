@@ -9,13 +9,23 @@ import s from '../styles/home.style';
 export default class Home extends Component{
     constructor() {
         super()
-        this.state = {
-            open: false
-        }
+        this.state = {open: false, value:[]};
+        this.handleSubmit = this.handleSubmit.bind(this)
         this.toggle = this.toggle.bind(this)
         this.open = this.open.bind(this)
         this.close = this.close.bind(this)
         this.buttonOn = this.buttonOn.bind(this)
+    }
+
+    handleSubmit(event){
+        event.preventDefault();
+        let val = this.refs.message.value;
+        let messageArray = [
+            ...this.state.value,
+            val
+        ]
+        this.setState({value: messageArray});
+        this.refs.message.value = ""
     }
 
     toggle(){
@@ -28,7 +38,6 @@ export default class Home extends Component{
         console.log("open")
         let el = ReactDOM.findDOMNode(this.refs.logo)
         open(el)
-        btnOnAnimation(la)
     }
 
     close(e){
@@ -49,13 +58,9 @@ export default class Home extends Component{
         btnOffAnimation(el)
     }
 
-    buttonOf(e){
-        console.log("dude")
-        let el = ReactDOM.findDOMNode(this.refs.button)
-        btnOffAnimation(el)
-    }
 
     render(){
+        console.log(this.state.value)
         return(
             <div className="msgAll">
                 <div className="msgContainer" >
@@ -70,12 +75,30 @@ export default class Home extends Component{
                             </div>
                         </div>
 
-                        <div className="message">
-
+                        <div className="messageContainer">
+                            <div className="messageBlock">
+                                <div>
+                                {this.state.value.map(msg =>{
+                                    return(
+                                        <div className="msgWrapper">
+                                            <p key={msg}>{msg}</p>
+                                        </div>
+                                    )
+                                })}
+                            </div>
+                        </div>
                         </div>
 
                         <div className="input">
-                            <input placeholder="Send a message..."></input>
+                            <form
+                                onSubmit={this.handleSubmit}>
+                                <input
+                                    ref="message"
+                                    className="btnInput"
+                                    placeholder="Send a message..."
+                                    onSubmit={this.handleSubmit}
+                                    />
+                            </form>
                         </div>
 
                     </div>
