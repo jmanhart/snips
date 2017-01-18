@@ -17,6 +17,7 @@ textarea{
 
 form{
     width:100%;
+    background-color: white;
 }
 
 textarea:focus, input:focus{
@@ -71,12 +72,21 @@ h1 {
     flex-direction: column;
 }
 
-p {
+.msgText{
     font-family: sans-serif;
-    font-size: 1em;
+    font-size: 0.85em;
     text-align: right;
-    background-color: rgba(0, 0, 0, 0);
-    padding: 0.50em 0.75em;
+    padding: 0.35em 0.75em;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 0.5em;
+    width:auto;
+}
+
+.msgRecipent {
+    color: white;
+    font-size: 1em;
+    font-family: sans-serif;
+    font-weight: normal;
 }
 
 
@@ -114,8 +124,8 @@ p {
 }
 
 .msgContent{
-    height: 16em;
-    width: 14em;
+    height: 20em;
+    width: 16em;
     opacity: 1;
     transform: scale(1);
     margin: 2em;
@@ -134,11 +144,12 @@ p {
 .profileContainer{
     width:100%;
     flex: 1;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: #1583B5;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 0px -1px 4px 1px rgba(0,0,0,0.54);
+    border-width: 1em;
+
 }
 
 .profileThumbnail {
@@ -165,17 +176,18 @@ p {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 0em 0.5em;
+    padding: 0em 0.75em;
 }
 
 .messageContainer {
     width:100%;
-    flex: 3;
+    flex: 5;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     background-color: rgba(0, 0, 0, 0);
     overflow: scroll;
+    padding:0.75em;
 }
 
 .messageBlock{
@@ -194,7 +206,8 @@ p {
 }
 
 .btnInput{
-    background-color: rgba(0, 0, 0, 0.09);;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0px -1px 4px 1px rgba(0,0,0,0.05);
     flex: 9;
 }
 
@@ -212,7 +225,7 @@ input {
     box-sizing: border-box;
     border-width: 0;
     font-size: 0.8625em;
-    /*background-color: rgba(0, 0, 0, 0.025);*/
+
 }
 
 .icon{
@@ -222,7 +235,5 @@ input {
 }
 
 .msgWrapper{
-    background-color: rgba(0, 0, 0, 0.1);
-    border-radius: 0.5em;
-    margin: 1em;
+    margin: 0.35em;
 }

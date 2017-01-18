@@ -67,25 +67,23 @@ export default class Home extends Component{
                     <div className="msgContent" ref="logo">
 
                         <div className="profileContainer">
-                            <div className="profileThumbnail">
-                                <div className="thumbnailMask" />
-                            </div>
                             <div className="profileInfo">
-                                <h1>Logan Sparlin</h1>
+                                <span className="msgRecipent">Logan Sparlin</span>
                             </div>
                         </div>
 
                         <div className="messageContainer">
                             <div className="messageBlock">
-                                <div>
                                 {this.state.value.map(msg =>{
                                     return(
                                         <div className="msgWrapper">
-                                            <p key={msg}>{msg}</p>
+                                            <span
+                                                className="msgText"
+                                                key={msg}>{msg}
+                                            </span>
                                         </div>
                                     )
                                 })}
-                            </div>
                         </div>
                         </div>
 
