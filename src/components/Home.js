@@ -2,7 +2,7 @@ import React, { PropTypes, Component, StyleSheet } from 'react';
 import {render} from 'react-dom';
 import dynamics from 'dynamics.js';
 import ReactDOM from 'react-dom';
-import { open, close, btnOnAnimation, btnOffAnimation, iconAnimation } from '../lib/helpers'
+import { open, close, btnOnAnimation, btnOffAnimation, btnIconOnAnimation, btnIconOffAnimation } from '../lib/helpers'
 import { Link } from 'react-router';
 import s from '../styles/home.style';
 
@@ -15,6 +15,7 @@ export default class Home extends Component{
         this.open = this.open.bind(this)
         this.close = this.close.bind(this)
         this.buttonOn = this.buttonOn.bind(this)
+        this.btnIconOn = this.btnIconOn.bind(this)
     }
 
     handleSubmit(event){
@@ -32,6 +33,7 @@ export default class Home extends Component{
         this.setState({ open: !this.state.open})
         this.state.open ? this.close() : this.open();
         this.state.open ? this.buttonOff() : this.buttonOn();
+        this.state.open ? this.btnIconOff() : this.btnIconOn();
     }
 
     open(e){
@@ -56,6 +58,16 @@ export default class Home extends Component{
         console.log("dude")
         let el = ReactDOM.findDOMNode(this.refs.button)
         btnOffAnimation(el)
+    }
+
+    btnIconOn(e){
+        let el = ReactDOM.findDOMNode(this.refs.btnIcon)
+        btnIconOnAnimation(el)
+    }
+
+    btnIconOff(e){
+        let el = ReactDOM.findDOMNode(this.refs.btnIcon)
+        btnIconOffAnimation(el)
     }
 
 
@@ -103,7 +115,7 @@ export default class Home extends Component{
                 </div>
                 <div className="msgButton">
                     <div className="test" ref="button" onClick={this.toggle}>
-                        <div className="icon" ref="icon"/>
+                        <div className="icon" ref="btnIcon"/>
                     </div>
                 </div>
             </div>
