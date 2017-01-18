@@ -152,16 +152,6 @@ h1 {
 
 }
 
-.profileThumbnail {
-    flex: 1;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-
 .thumbnailMask{
     height: 50%;
     width: 50%;
