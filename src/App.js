@@ -1,7 +1,11 @@
-import React, { PropTypes, Component } from 'react';
+import React, { PropTypes, Component, StyleSheet } from 'react';
+import {render} from 'react-dom';
+import dynamics from 'dynamics.js';
+import ReactDOM from 'react-dom';
 import Interactive from 'react-interactive';
 import { Link } from 'react-router';
 import s from './styles/app.style';
+import './styles/styles.css';
 
 const propTypes = {
   children: PropTypes.element.isRequired,
@@ -11,9 +15,10 @@ const propTypes = {
 export default class App extends Component{
     render(){
         return(
-            <div style={s.root}>
-                <h1 style={s.title}>2017</h1>
-                {this.props.children}
+            <div className="wrapper">
+                <div className="content">
+                    {this.props.children}
+                </div>
             </div>
         )
     }

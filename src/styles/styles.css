@@ -1,0 +1,93 @@
+html, body{
+    background-color: #DEE9EF;
+}
+
+.wrapper{
+    width:100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+h1 {
+    color:#1583B5;
+    font-size: 2em;
+}
+
+.test {
+    width: 5em;
+    height: 5em;
+    border-radius: 3em;
+    background-color: #1583B5;
+}
+
+.content{
+    height: 50em;
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Hero{
+    height: 25em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+p {
+    font-family: sans-serif;
+    font-size: 2em;
+    text-align: center;
+}
+
+
+.root{
+    font-family: helvetica neue, helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 0.025em;
+    padding: 3vh 0 12vh 0;
+    width: 80%;
+    display: flex;
+    background-color:rgba(0,0,0,0.4);
+    flex-direction: column;
+    max-width: 80em;
+    position: relative;
+    left: 50vw;
+    transform: translate(-50%, 0);
+}
+
+.msgContainer{
+    height: 100%;
+    width: 100%;
+}
+
+.msgButton{
+    background-color: rgba(0, 0, 0, 0.02);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    display: flex;
+}
+.msgAll{
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+.msgContact{
+    height: 16em;
+    width: 14em;
+    opacity: 0;
+    margin: 2em;
+    border-radius: 0.625em;
+    transform: scale(0);
+    background-color: rgba(255, 255, 255, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
