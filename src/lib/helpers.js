@@ -52,7 +52,8 @@ export let close = function(el){
 
 export let btnOnAnimation = function(el){
     dynamics.animate(el, {
-      backgroundColor: '#43F086'
+      backgroundColor: '#0f668e',
+      scale: 1.05
 
     }, {
       type: dynamics.spring,
@@ -65,7 +66,8 @@ export let btnOnAnimation = function(el){
 
 export let btnOffAnimation = function(el){
     dynamics.animate(el, {
-      backgroundColor: '#1583B5'
+      backgroundColor: '#1583B5',
+      scale: 1
 
     }, {
       type: dynamics.spring,

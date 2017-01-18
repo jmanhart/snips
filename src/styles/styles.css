@@ -1,6 +1,7 @@
 html, body{
     background-color: #DEE9EF;
     box-sizing: border-box;
+    font-size: 1.15em;
 }
 
 *, *:before, *:after {
@@ -9,6 +10,11 @@ html, body{
 
 textarea:focus, input:focus{
     outline: none;
+}
+
+::-webkit-input-placeholder {
+   color: rgba(0, 0, 0, 0.5);
+   font-size: 0.8625em;
 }
 
 .wrapper{
@@ -31,6 +37,10 @@ h1 {
     border-radius: 3em;
     background-color: #1583B5;
     box-shadow: -7px 7px 4px -5px rgba(0,0,0,0.10);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5em;
 }
 
 .content{
@@ -161,6 +171,12 @@ input {
     padding: 0.125em 1em;
     box-sizing: border-box;
     border-width: 0;
-    font-size: 1em;
+    font-size: 0.8625em;
     background-color: rgba(0, 0, 0, 0.025);
+}
+
+.icon{
+    flex-grow: 1;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 1);;
 }

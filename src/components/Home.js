@@ -2,7 +2,7 @@ import React, { PropTypes, Component, StyleSheet } from 'react';
 import {render} from 'react-dom';
 import dynamics from 'dynamics.js';
 import ReactDOM from 'react-dom';
-import { open, close, btnOnAnimation, btnOffAnimation } from '../lib/helpers'
+import { open, close, btnOnAnimation, btnOffAnimation, iconAnimation } from '../lib/helpers'
 import { Link } from 'react-router';
 import s from '../styles/home.style';
 
@@ -28,6 +28,7 @@ export default class Home extends Component{
         console.log("open")
         let el = ReactDOM.findDOMNode(this.refs.logo)
         open(el)
+        btnOnAnimation(la)
     }
 
     close(e){
@@ -43,6 +44,12 @@ export default class Home extends Component{
     }
 
     buttonOff(e){
+        console.log("dude")
+        let el = ReactDOM.findDOMNode(this.refs.button)
+        btnOffAnimation(el)
+    }
+
+    buttonOf(e){
         console.log("dude")
         let el = ReactDOM.findDOMNode(this.refs.button)
         btnOffAnimation(el)
@@ -68,13 +75,15 @@ export default class Home extends Component{
                         </div>
 
                         <div className="input">
-                            <input></input>
+                            <input placeholder="Send a message..."></input>
                         </div>
 
                     </div>
                 </div>
                 <div className="msgButton">
-                    <div className="test" ref="button" onClick={this.toggle} />
+                    <div className="test" ref="button" onClick={this.toggle}>
+                        <div className="icon" ref="icon"/>
+                    </div>
                 </div>
             </div>
         )
