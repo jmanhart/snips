@@ -49,3 +49,29 @@ export let close = function(el){
     })
 
 }
+
+export let btnOnAnimation = function(el){
+    dynamics.animate(el, {
+      backgroundColor: '#43F086'
+
+    }, {
+      type: dynamics.spring,
+      frequency: 200,
+      friction: 270,
+      duration: 800
+    })
+
+}
+
+export let btnOffAnimation = function(el){
+    dynamics.animate(el, {
+      backgroundColor: '#1583B5'
+
+    }, {
+      type: dynamics.spring,
+      frequency: 200,
+      friction: 270,
+      duration: 800
+    })
+
+}

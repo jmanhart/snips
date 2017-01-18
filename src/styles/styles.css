@@ -1,5 +1,14 @@
 html, body{
     background-color: #DEE9EF;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+textarea:focus, input:focus{
+    outline: none;
 }
 
 .wrapper{
@@ -11,8 +20,9 @@ html, body{
 }
 
 h1 {
-    color:#1583B5;
-    font-size: 2em;
+    color:rgba(0, 0, 0, 0.8);;
+    font-size: 1em;
+    font-family: sans-serif;
 }
 
 .test {
@@ -20,6 +30,7 @@ h1 {
     height: 5em;
     border-radius: 3em;
     background-color: #1583B5;
+    box-shadow: -7px 7px 4px -5px rgba(0,0,0,0.10);
 }
 
 .content{
@@ -54,7 +65,7 @@ p {
     padding: 3vh 0 12vh 0;
     width: 80%;
     display: flex;
-    background-color:rgba(0,0,0,0.4);
+    background-color:rgba(0,0,0,0.0);
     flex-direction: column;
     max-width: 80em;
     position: relative;
@@ -68,7 +79,7 @@ p {
 }
 
 .msgButton{
-    background-color: rgba(0, 0, 0, 0.02);
+    background-color: rgba(0, 0, 0, 0.0);
     height: 100%;
     width: 100%;
     display: flex;
@@ -76,18 +87,80 @@ p {
     display: flex;
 }
 .msgAll{
-    background-color: rgba(0, 0, 0, 0.03);
+    background-color: rgba(0, 0, 0, 0.0);
 }
 
-.msgContact{
+.msgContent{
     height: 16em;
     width: 14em;
     opacity: 0;
+    transform: scale(0);
     margin: 2em;
     border-radius: 0.625em;
-    transform: scale(0);
     background-color: rgba(255, 255, 255, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    box-shadow: -7px 7px 4px -5px rgba(0,0,0,0.10);
+}
+
+
+
+.profileContainer{
+    width:100%;
+    flex: 1;
+    background-color: rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profileThumbnail {
+    flex: 1;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
     display: flex;
     align-items: center;
     justify-content: center;
+
+}
+
+.thumbnailMask{
+    height: 50%;
+    width: 50%;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.profileInfo {
+    flex: 3;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0em 0.5em;
+}
+
+.message {
+    width:100%;
+    flex: 3;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.input {
+    width:100%;
+    flex: 1;
+}
+
+input {
+    width: 100%;
+    height: 100%;
+    padding: 0.125em 1em;
+    box-sizing: border-box;
+    border-width: 0;
+    font-size: 1em;
+    background-color: rgba(0, 0, 0, 0.025);
 }
