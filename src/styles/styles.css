@@ -126,8 +126,8 @@ h1 {
 .msgContent{
     height: 20em;
     width: 16em;
-    opacity: 1;
-    transform: scale(1);
+    opacity: 0;
+    transform: scale(0);
     margin: 2em;
     border-radius: 0.625em;
     background-color: rgba(255, 255, 255, 1);
