@@ -8,7 +8,9 @@ import {
     btnOnAnimation,
     btnOffAnimation,
     btnIconOnAnimation,
-    btnIconOffAnimation } from './../../lib/helpers'
+    btnIconOffAnimation,
+    messengerOnMount,
+ } from './../../lib/helpers'
 import { Link } from 'react-router';
 import s from './../../styles/home.style';
 
@@ -22,6 +24,11 @@ export default class Messenger extends Component{
         this.close = this.close.bind(this)
         this.buttonOn = this.buttonOn.bind(this)
         this.btnIconOn = this.btnIconOn.bind(this)
+
+    }
+
+    componentDidMount(){
+        this.animateMessenger()
     }
 
     handleSubmit(event){
@@ -33,6 +40,11 @@ export default class Messenger extends Component{
         ]
         this.setState({value: messageArray});
         this.refs.message.value = ""
+    }
+
+    animateMessenger(){
+        let el = ReactDOM.findDOMNode(this.refs.buttonDot)
+        messengerOnMount(el)
     }
 
     toggle(){
@@ -80,8 +92,8 @@ export default class Messenger extends Component{
     render(){
         console.log(this.state.value)
         return(
-            <div className="msgAll">
-                <div className="msgContainer" >
+            <div className="msgAll" ref="buttonDot">
+                <div className="msgContainer">
                     <div className="msgContent" ref="logo">
 
                         <div className="profileContainer">
@@ -119,7 +131,7 @@ export default class Messenger extends Component{
 
                     </div>
                 </div>
-                <div className="msgButton">
+                <div className="msgButton" >
                     <div className="test" ref="button" onClick={this.toggle}>
                         <div className="icon" ref="btnIcon"/>
                     </div>

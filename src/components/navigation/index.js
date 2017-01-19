@@ -10,7 +10,7 @@ import {
     btnIconOnAnimation,
     btnIconOffAnimation } from './../../lib/helpers'
 import { Link } from 'react-router';
-import s from './../../styles/home.style';
+import s from './navigation-styles.css';
 
 export default class Messenger extends Component{
     constructor() {
@@ -19,10 +19,12 @@ export default class Messenger extends Component{
 
     render(){
         return(
-            <div>
-                <h1> :) </h1>
+            <div className="navigation-container">
+                <Link to="/">
+                    <span className="navigation-head"> :) </span>
+                </Link>
                 <Link to="/msg">
-                    <p>msg</p>
+                    <span className="navigation-label">messenger</span>
                 </Link>
             </div>
         )

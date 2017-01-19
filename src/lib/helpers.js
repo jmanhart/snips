@@ -13,6 +13,19 @@ export let open = function(el){
 
 }
 
+export let messengerOnMount = function(el){
+    dynamics.animate(el,{
+        translateY: -50,
+        translateX: -50,
+        opacity: 1
+      },{
+        type: dynamics.spring,
+        duration: 883,
+        frequency: 83,
+        friction: 171,
+      })
+}
+
 export let close = function(el){
     dynamics.animate(el, {
       opacity: 0,
