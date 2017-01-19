@@ -13,11 +13,9 @@ import ExampleTwoDeepComponent from './components/ExampleTwoDeepComponent';
 // This will not be an issue cause still deving dingus
 
 const routes = (
-<<<<<<< HEAD
-  <Route path="/personal-portfolio-17" mapMenuTitle="Home" component={App}>
-=======
+
   <Route path="/interactions" mapMenuTitle="Home" component={App}>
->>>>>>> production
+
     <IndexRoute component={Home} />
 
     {/*<Route path="/example" mapMenuTitle="Example" component={ExampleComponent}>
