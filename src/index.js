@@ -9,7 +9,7 @@ import PageNotFound from './components/PageNotFound';
 import ExampleComponent from './components/ExampleComponent';
 import ExampleTwoDeepComponent from './components/ExampleTwoDeepComponent';
 
-// Need to add the /personal-portfolio-17/ to have it ready for production
+// Need to add the /interactions/ to have it ready for production
 // This will not be an issue cause still deving dingus
 
 const routes = (

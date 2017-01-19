@@ -1,13 +1,13 @@
-# Personal Site 2017
+# interactions!
 
 [Live Site][LiveSite]  
 
-The is the 2017 personal site for John Manhart. Build using [React][react], [Webpack][webpackProduction], and [Github Pages][ghPagesOverview].
+Build using [React][react], [Webpack][webpackProduction], and [Github Pages][ghPagesOverview].
 
 ####Production for Pages
     - Set [`pathPrefix` to `true` in the `404.html` file][pathPrefix] in order to keep `/repo-name` in the path after the redirect
     - Add your `repo-name` to the absolute path of assets in `index.html`
-      - Change the [bundle.js src][indexHtmlSPA] to `"/repo-name/build/bundle.js"`
+      - Change the bundle.js src to `"/repo-name/build/bundle.js"`
     - If you are using React Router, you'll need to add the `repo-name` prefix to your routes and links, for example:
       - `<Route path="/repo-name/about" component={About} />`
       - `<Link to="/repo-name/about">About</Link>`
@@ -97,7 +97,7 @@ I have included `webpack-dev-server` for testing changes locally. It can be acce
 
 
 <!-- manhart -->
-[LiveSite]: https://jmanhart.github.io/personal-portfolio-17/
+[LiveSite]: https://jmanhart.github.io/interactions/
 
 <!-- links to within repo -->
 <!-- [404html]: https://github.com/rafrex/spa-github-pages/blob/gh-pages/404.html
