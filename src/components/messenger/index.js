@@ -2,11 +2,17 @@ import React, { PropTypes, Component, StyleSheet } from 'react';
 import {render} from 'react-dom';
 import dynamics from 'dynamics.js';
 import ReactDOM from 'react-dom';
-import { open, close, btnOnAnimation, btnOffAnimation, btnIconOnAnimation, btnIconOffAnimation } from '../lib/helpers'
+import {
+    open,
+    close,
+    btnOnAnimation,
+    btnOffAnimation,
+    btnIconOnAnimation,
+    btnIconOffAnimation } from './../../lib/helpers'
 import { Link } from 'react-router';
-import s from '../styles/home.style';
+import s from './../../styles/home.style';
 
-export default class Home extends Component{
+export default class Messenger extends Component{
     constructor() {
         super()
         this.state = {open: false, value:[]};
