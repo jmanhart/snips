@@ -3,13 +3,13 @@ import Interactive from 'react-interactive';
 import { Link } from 'react-router';
 import './../../styles/styles.css';
 
-import Messenger from './../../components/messenger'
+import Cards from './../../components/cards'
 
-export default class MessageInteraction extends Component{
+export default class CardsInteraction extends Component{
     render(){
         return(
-            <div>
-                <Messenger />
+            <div className="cards-interaction">
+                <Cards />
             </div>
         )
     }

@@ -19,9 +19,7 @@ export default class App extends Component{
         return(
             <div className="wrapper">
                 <Navigation />
-                <div className="content">
-                    {this.props.children}
-                </div>
+                {this.props.children}
             </div>
         )
     }

@@ -26,6 +26,9 @@ export default class Messenger extends Component{
                 <Link to="/msg">
                     <span className="navigation-label">messenger</span>
                 </Link>
+                <Link to="/cards">
+                    <span className="navigation-label">cards</span>
+                </Link>
             </div>
         )
     }

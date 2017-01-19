@@ -15,8 +15,8 @@ export let open = function(el){
 
 export let messengerOnMount = function(el){
     dynamics.animate(el,{
-        translateY: -50,
-        translateX: -50,
+        translateY: -90,
+        translateX: -90,
         opacity: 1
       },{
         type: dynamics.spring,
