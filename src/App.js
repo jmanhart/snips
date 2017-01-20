@@ -20,7 +20,11 @@ export default class App extends Component{
             <div className="wrapper">
                 <Navigation />
                 <div>
-                {this.props.children}
+                    {this.props.children}
+                </div>
+
+                <div className="footer-container">
+                    <span className="footer-sign-off">Say Hi!</span>
                 </div>
             </div>
         )

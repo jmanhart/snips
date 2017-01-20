@@ -16,7 +16,7 @@
     width: 100%;
 }
 .msgContent{
-    height: 20em;
+    height: 16em;
     width: 16em;
     opacity: 0;
     transform: scale(0);
