@@ -13,8 +13,13 @@ import CardsInteraction from './containers/cards-interaction';
 const routes = (
 
   <Route path="/interactions" mapMenuTitle="Home" component={App}>
+<<<<<<< HEAD
+
+    <IndexRoute component={Home} />
+=======
     <Route path="/msg" mapMenuTitle="Example" component={MessageInteraction} />
     <Route path="/cards" mapMenuTitle="Example" component={CardsInteraction} />
+>>>>>>> production
 
   </Route>
 );
