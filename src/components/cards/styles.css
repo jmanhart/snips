@@ -25,7 +25,7 @@ p{
 
 .card--container {
 	background: #45d045;
-  background: linear-gradient(135deg, #45d045 0%, #45d0a4 100%);
+    background: linear-gradient(135deg, #45d045 0%, #45d0a4 100%);
 	width: 20em;
 	height: 25em;
 	box-sizing: content-box;

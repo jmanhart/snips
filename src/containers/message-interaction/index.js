@@ -8,7 +8,7 @@ import Messenger from './../../components/messenger'
 export default class MessageInteraction extends Component{
     render(){
         return(
-            <div>
+            <div className="messenger-interaction">
                 <Messenger />
             </div>
         )

@@ -12,7 +12,7 @@ import {
     messengerOnMount,
  } from './../../lib/helpers'
 import { Link } from 'react-router';
-import s from './../../styles/home.style';
+import s from './styles.css';
 
 export default class Messenger extends Component{
     constructor() {
@@ -92,48 +92,50 @@ export default class Messenger extends Component{
     render(){
         console.log(this.state.value)
         return(
-            <div className="msgAll" ref="buttonDot">
-                <div className="msgContainer">
-                    <div className="msgContent" ref="logo">
+            <div className="messenger-content">
+                <div className="msgAll" ref="buttonDot">
+                    <div className="msgContainer">
+                        <div className="msgContent" ref="logo">
 
-                        <div className="profileContainer">
-                            <div className="profileInfo">
-                                <span className="msgRecipent">Logan Sparlin</span>
+                            <div className="profileContainer">
+                                <div className="profileInfo">
+                                    <span className="msgRecipent">Logan Sparlin</span>
+                                </div>
                             </div>
-                        </div>
 
-                        <div className="messageContainer">
-                            <div className="messageBlock">
-                                {this.state.value.map(msg =>{
-                                    return(
-                                        <div className="msgWrapper">
-                                            <span
-                                                className="msgText"
-                                                key={msg}>{msg}
-                                            </span>
-                                        </div>
-                                    )
-                                })}
-                        </div>
-                        </div>
+                            <div className="messageContainer">
+                                <div className="messageBlock">
+                                    {this.state.value.map(msg =>{
+                                        return(
+                                            <div className="msgWrapper">
+                                                <span
+                                                    className="msgText"
+                                                    key={msg}>{msg}
+                                                </span>
+                                            </div>
+                                        )
+                                    })}
+                            </div>
+                            </div>
 
-                        <div className="input">
-                            <form
-                                onSubmit={this.handleSubmit}>
-                                <input
-                                    ref="message"
-                                    className="btnInput"
-                                    placeholder="Send a message..."
-                                    onSubmit={this.handleSubmit}
-                                    />
-                            </form>
-                        </div>
+                            <div className="input">
+                                <form
+                                    onSubmit={this.handleSubmit}>
+                                    <input
+                                        ref="message"
+                                        className="btnInput"
+                                        placeholder="Send a message..."
+                                        onSubmit={this.handleSubmit}
+                                        />
+                                </form>
+                            </div>
 
+                        </div>
                     </div>
-                </div>
-                <div className="msgButton" >
-                    <div className="test" ref="button" onClick={this.toggle}>
-                        <div className="icon" ref="btnIcon"/>
+                    <div className="msgButton" >
+                        <div className="test" ref="button" onClick={this.toggle}>
+                            <div className="icon" ref="btnIcon"/>
+                        </div>
                     </div>
                 </div>
             </div>
