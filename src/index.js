@@ -11,6 +11,11 @@ import CardsInteraction from './containers/cards-interaction';
 // This will not be an issue cause still deving dingus
 
 const routes = (
+<<<<<<< HEAD
+=======
+  <Route path="/interactions" mapMenuTitle="Home" component={App}>
+    <IndexRoute />
+>>>>>>> devlopment
 
   <Route path="/interactions" mapMenuTitle="Home" component={App}>
     <Route path="/msg" mapMenuTitle="Example" component={MessageInteraction} />
