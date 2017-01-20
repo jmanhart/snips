@@ -27,7 +27,7 @@ export default class Messenger extends Component{
             <div className="navigation-container">
                 <div className="internal-links">
                     <span className="navigation-head"  >
-                        <Link activeClassName="is-active" onlyActiveOnIndex={true} to="/" ref="head" >
+                        <Link activeClassName="is-active" onlyActiveOnIndex={true} to="/interactions" ref="head" >
                             :)
                         </Link>
                     </span>
