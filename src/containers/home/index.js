@@ -8,7 +8,7 @@ import s from './styles/app.style';
 export default class Home extends Component{
     render(){
         return(
-            <div style={{backgroundColor:'pink'}}>
+            <div>
                 <p>Hello</p>
             </div>
         )
