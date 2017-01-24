@@ -61,23 +61,25 @@ export default class CardsInteraction extends Component{
                         </div>
                     </div>
 
-                    {/*New Navigation*/}
+                    {/* New Architecture -----------------------------*/}
                     <div className="copy--block">
-                        <span className="copy__header">01: New Naviagtion Structure</span>
+                        <span className="copy__header">01: New Architecture</span>
                         <hr/>
+                        <span className="copy__subheader">Wireframeing the propsed Content</span>
                         <span className="copy__body">
                             The exsiting consisted of many hard stops concering navigation. On each load the user would select their language and move on to a nother page to filter down to their desired content. We decided to go with the [APPLE] and [GOOGLE] standard model of using a bottm tabbed navigation model to allow for ease and quick navigation.
                         </span>
                         <div className="image--block--contain">
-                            <img src="https://jmanhart.github.io/interactions/src/public/images/cobb-case-study/wires-tabs.jpg"/>
+                            <img src="https://jmanhart.github.io/interactions/src/public/images/cobb-case-study/wires-all.jpg"/>
                             <span className="image__label">Exploring Different Tab Navigation Solutions</span>
                         </div>
                     </div>
 
-                    {/*Content re-structure*/}
+                    {/* New Naviagtion -----------------------------*/}
                     <div className="copy--block">
-                        <span className="copy__header">02: Content re-structure</span>
+                        <span className="copy__header">02: New Naviagtion</span>
                         <hr/>
+                        <span className="copy__subheader">New Navigation</span>
                         <span className="copy__body">
                             Woke vegan raclette flannel, banh mi shoreditch occupy readymade af crucifix pop-up ramps fingerstache keffiyeh post-ironic. Post-ironic biodiesel four dollar toast mustache, whatever wolf poke tofu +1 ethical. Cronut pok pok small batch, sriracha food truck leggings beard deep v pop-up meditation echo park. Food truck blog mumblecore air plant flexitarian umami. Chambray ramps snackwave, thundercats street art gentrify 3 wolf moon DIY. Chillwave DIY occupy cliche stumptown affogato. Mlkshk fap tousled, humblebrag next level waistcoat chicharrones etsy shoreditch.
                         </span>
@@ -89,11 +91,11 @@ export default class CardsInteraction extends Component{
 
                     {/*UI Language Selection*/}
                     <div className="copy--block">
-                        <span className="copy__header">03: UI Language Selection</span>
+                        <span className="copy__header">03: Language Selection</span>
                         <hr/>
-                        <span className="copy__subheader">This is a SubHeader:</span>
+                        <span className="copy__subheader">Defaulting and allowing User selection</span>
                         <span className="copy__body">
-                            Woke vegan raclette flannel, banh mi shoreditch occupy readymade af crucifix pop-up ramps fingerstache keffiyeh post-ironic. Post-ironic biodiesel four dollar toast mustache, whatever wolf poke tofu +1 ethical. Cronut pok pok small batch, sriracha food truck leggings beard deep v pop-up meditation echo park. Food truck blog mumblecore air plant flexitarian umami. Chambray ramps snackwave, thundercats street art gentrify 3 wolf moon DIY. Chillwave DIY occupy cliche stumptown affogato. Mlkshk fap tousled, humblebrag next level waistcoat chicharrones etsy shoreditch.
+                            The most glaring problem with the previous interation of the App was the User having to select the their language on App load. First we solved this problem was to default the Users language to their native phone language. Second we allowed created the ability for the User to change their UI language by adding a method in the Top Navigation bar to do so on any page.
                         </span>
                     </div>
 
