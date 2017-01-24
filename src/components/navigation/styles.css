@@ -2,8 +2,8 @@
     background-color: rgba(0,0,0,0);
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 1em;
+    justify-content: flex-start;
+    padding: 1em 2em;
     border-bottom: 1px solid #EBEFF4;
     height:4em;
     width: 100%;
@@ -12,13 +12,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgba(0, 0, 0, 0.05);
 }
 .navigation-head{
-    font-size: 1.5em;
+    font-size: 1em;
     margin:0em 0.75em;
     color: rgba(0, 0, 0, 0.2);
     transition: all 0.2s ease-in;
-
+    /*transform: translate(0%, 25%) rotateZ(0deg);
+    transform-origin: 50% 50%;*/
 }
 .navigation-label{
     font-size: 0.85em;
@@ -29,7 +31,7 @@
     transition: all 0.2s ease-in;
 }
 .is-active{
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.75);
     transition: all 0.2s ease-in;
 }
 .navigation-github{
@@ -45,4 +47,76 @@
     color: rgba(0, 0, 0, 0.5);
     transition: all 0.2s ease-in;
     border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+
+.footer-container{
+    padding: 2em 0em;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-sign-off{
+    font-size: 0.85em;
+    letter-spacing: 0.07em;
+    font-family: sans-serif;
+    margin:0.25em 0.95em;
+    color: rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease-in;
+}
+
+.footer-email{
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.footer-icon{
+    margin: 0.5em;
+    font-size: 1.2em;
+    color: rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease-in;
+}
+
+i:hover{
+    color: rgba(0, 0, 0, 0.5);
+    transition: all 0.2s ease-in;
+
+}
+
+#spin:hover{
+    animation: none;
+    color: rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease-in;
+}
+
+#spin{
+    animation: rotate 10s infinite linear;
+    margin: 0;
+    font-size: 1.5em;
+    color: rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease-in;
+}
+
+#spinner{
+    transform: translate(0%, 25%) rotateZ(0deg);
+    transform-origin: 50% 50%;
+
+}
+
+@keyframes rotate{
+    0% {
+        -webkit-transform: translate(-50%, -50%) rotateZ(0deg);
+        -moz-transform: translate(-50%, -50%) rotateZ(0deg);
+        -ms-transform: translate(-50%, -50%) rotateZ(0deg);
+        transform: translate(-50%, -50%) rotateZ(0deg);
+    }
+
+    100% {
+        -webkit-transform: translate(-50%, -50%) rotateZ(360deg);
+        -moz-transform: translate(-50%, -50%) rotateZ(360deg);
+        -ms-transform: translate(-50%, -50%) rotateZ(360deg);
+        transform: translate(-50%, -50%) rotateZ(360deg);
+    }
 }

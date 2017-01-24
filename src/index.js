@@ -4,17 +4,20 @@ import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 
 import App from './App';
 
+import Home from './containers/home';
 import MessageInteraction from './containers/message-interaction';
 import CardsInteraction from './containers/cards-interaction';
+import CobbCaseStudy from './containers/cobb-case-study';
 
 // Need to add the /interactions/ to have it ready for production
 // This will not be an issue cause still deving dingus
 
 const routes = (
-  <Route path="/interactions" mapMenuTitle="Home" component={App}>
+  <Route path="/" mapMenuTitle="Home" component={App}>
+    <IndexRoute component={Home}/>
     <Route path="/msg" mapMenuTitle="Example" component={MessageInteraction} />
     <Route path="/cards" mapMenuTitle="Example" component={CardsInteraction} />
-
+    <Route path="/cobb" mapMenuTitle="Example" component={CobbCaseStudy} />
   </Route>
 );
 

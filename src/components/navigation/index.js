@@ -25,31 +25,23 @@ export default class Messenger extends Component{
     render(){
         return(
             <div className="navigation-container">
-                <div className="internal-links">
-                    <span className="navigation-head"  >
-                        <Link activeClassName="is-active" onlyActiveOnIndex={true} to="/interactions" ref="head" >
-                            :)
-                        </Link>
-                    </span>
 
+                <Link activeClassName="is-active" onlyActiveOnIndex={true} to="/" >
+                    <span className="navigation-head">
+                        <i className="fa fa-smile-o fa-2x" aria-hidden="true"></i>
+                    </span>
+                </Link>
+
+                <div className="internal-links">
                     <span className="navigation-label">
                         <Link activeClassName="is-active" to="/msg">
                             messenger
                         </Link>
                     </span>
-
                     <span className="navigation-label">
-                        <Link activeClassName="is-active" to="/cards">
-                            cards
+                        <Link activeClassName="is-active" to="/cobb">
+                            cobb
                         </Link>
-                    </span>
-                </div>
-
-                <div className="external-links">
-                    <span className="navigation-github">
-                        <a href="https://github.com/jmanhart/interactions">
-                            to github!
-                        </a>
                     </span>
                 </div>
 
@@ -57,6 +49,20 @@ export default class Messenger extends Component{
         )
     }
 }
+
+{/*<span className="navigation-label">
+    <Link activeClassName="is-active" to="/cards">
+    cards
+    </Link>
+    </span>*/}
+
+    {/*<div className="external-links">
+        <span className="navigation-github">
+        <a href="https://github.com/jmanhart/interactions">
+        to github!
+        </a>
+        </span>
+        </div>*/}
 
 
 export const styles = Object.create({
