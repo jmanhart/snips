@@ -94,9 +94,14 @@ export default class CardsInteraction extends Component{
                         <span className="copy__header">03: Language Selection</span>
                         <hr/>
                         <span className="copy__subheader">Defaulting and allowing User selection</span>
+                        <div className="image--block--contain">
+                            <img src="https://jmanhart.github.io/interactions/src/public/images/cobb-case-study/wires-lang.jpg"/>
+                            <span className="image__label">UI language selection wireframe</span>
+                        </div>
                         <span className="copy__body">
                             The most glaring problem with the previous interation of the App was the User having to select the their language on App load. First we solved this problem was to default the Users language to their native phone language. Second we allowed created the ability for the User to change their UI language by adding a method in the Top Navigation bar to do so on any page.
                         </span>
+
                     </div>
 
                     {/*Content Filtering*/}
@@ -104,8 +109,12 @@ export default class CardsInteraction extends Component{
                         <span className="copy__header">04: Content Filtering</span>
                         <hr/>
                         <span className="copy__subheader">This is a SubHeader:</span>
+                        <div className="image--block--contain">
+                            <img src="https://jmanhart.github.io/interactions/src/public/images/cobb-case-study/wires-guide-lang.jpg"/>
+                            <span className="image__label">UI language selection wireframe</span>
+                        </div>
                         <span className="copy__body">
-                            Woke vegan raclette flannel, banh mi shoreditch occupy readymade af crucifix pop-up ramps fingerstache keffiyeh post-ironic. Post-ironic biodiesel four dollar toast mustache, whatever wolf poke tofu +1 ethical. Cronut pok pok small batch, sriracha food truck leggings beard deep v pop-up meditation echo park. Food truck blog mumblecore air plant flexitarian umami. Chambray ramps snackwave, thundercats street art gentrify 3 wolf moon DIY. Chillwave DIY occupy cliche stumptown affogato. Mlkshk fap tousled, humblebrag next level waistcoat chicharrones etsy shoreditch.
+                            An added feature requested by the client was a method to filter all their guides by type and
                         </span>
                     </div>
 
