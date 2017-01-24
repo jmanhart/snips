@@ -36,6 +36,14 @@ export default class CardsInteraction extends Component{
                             <li className="copy__bullet">Create three custom tools for the user</li>
                             <li className="copy__bullet">Improve app lifecycle and release schedule</li>
                         </ul>
+                        <ul>
+                            <span className="copy__subheader">Areas for drastic changes:</span>
+                            <li className="copy__bullet">New Navigation Solution</li>
+                            <li className="copy__bullet">Content re-structure</li>
+                            <li className="copy__bullet">UI Language Selection</li>
+                            <li className="copy__bullet">Content Filtering</li>
+                            <li className="copy__bullet">Creating User Tools</li>
+                        </ul>
                         */}
                     </div>
 
@@ -51,32 +59,37 @@ export default class CardsInteraction extends Component{
                             <img src="https://jmanhart.github.io/interactions/src/public/images/cobb-case-study/wires-old-app.jpg"/>
                             <span className="image__label"> User Map of Exisiting App</span>
                         </div>
-                        <ul>
-                            <span className="copy__subheader">Areas for drastic changes:</span>
-                            <li className="copy__bullet">New Navigation Structure</li>
-                            <li className="copy__bullet">UI Language Selection</li>
-                            <li className="copy__bullet">Content Filtering</li>
-                            <li className="copy__bullet">Creating User Tools</li>
-                        </ul>
                     </div>
 
                     {/*New Navigation*/}
                     <div className="copy--block">
                         <span className="copy__header">01: New Naviagtion Structure</span>
                         <hr/>
-                        <span className="copy__subheader">This is a SubHeader:</span>
-                        <div className="image--block--contain">
-                            <img src="https://jmanhart.github.io/interactions/src/public/images/cobb-case-study/wires-old-app.jpg"/>
-                            <span className="image__label"> User Map of Exisiting App</span>
-                        </div>
                         <span className="copy__body">
                             The exsiting consisted of many hard stops concering navigation. On each load the user would select their language and move on to a nother page to filter down to their desired content. We decided to go with the [APPLE] and [GOOGLE] standard model of using a bottm tabbed navigation model to allow for ease and quick navigation.
                         </span>
+                        <div className="image--block--contain">
+                            <img src="https://jmanhart.github.io/interactions/src/public/images/cobb-case-study/wires-tabs.jpg"/>
+                            <span className="image__label">Exploring Different Tab Navigation Solutions</span>
+                        </div>
+                    </div>
+
+                    {/*Content re-structure*/}
+                    <div className="copy--block">
+                        <span className="copy__header">02: Content re-structure</span>
+                        <hr/>
+                        <span className="copy__body">
+                            Woke vegan raclette flannel, banh mi shoreditch occupy readymade af crucifix pop-up ramps fingerstache keffiyeh post-ironic. Post-ironic biodiesel four dollar toast mustache, whatever wolf poke tofu +1 ethical. Cronut pok pok small batch, sriracha food truck leggings beard deep v pop-up meditation echo park. Food truck blog mumblecore air plant flexitarian umami. Chambray ramps snackwave, thundercats street art gentrify 3 wolf moon DIY. Chillwave DIY occupy cliche stumptown affogato. Mlkshk fap tousled, humblebrag next level waistcoat chicharrones etsy shoreditch.
+                        </span>
+                        <div className="image--block--contain">
+                            <img src="https://jmanhart.github.io/interactions/src/public/images/cobb-case-study/wires-tabs.jpg"/>
+                            <span className="image__label">Exploring Different Tab Navigation Solutions</span>
+                        </div>
                     </div>
 
                     {/*UI Language Selection*/}
                     <div className="copy--block">
-                        <span className="copy__header">02: UI Language Selection</span>
+                        <span className="copy__header">03: UI Language Selection</span>
                         <hr/>
                         <span className="copy__subheader">This is a SubHeader:</span>
                         <span className="copy__body">
@@ -86,7 +99,7 @@ export default class CardsInteraction extends Component{
 
                     {/*Content Filtering*/}
                     <div className="copy--block">
-                        <span className="copy__header">03: Content Filtering</span>
+                        <span className="copy__header">04: Content Filtering</span>
                         <hr/>
                         <span className="copy__subheader">This is a SubHeader:</span>
                         <span className="copy__body">
@@ -96,7 +109,7 @@ export default class CardsInteraction extends Component{
 
                     {/*Creating User Tools*/}
                     <div className="copy--block">
-                        <span className="copy__header">04: Creating User Tools</span>
+                        <span className="copy__header">05: Creating User Tools</span>
                         <hr/>
                         <span className="copy__subheader">This is a SubHeader:</span>
                         <span className="copy__body">

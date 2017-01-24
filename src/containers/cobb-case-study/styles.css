@@ -65,7 +65,7 @@ ul{
 
 /*--Hero Styles-----------------------------------------------*/
 .hero--block{
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.1);
     background-image: linear-gradient(100deg, #D11F3E, #6F1625);
     width:100%;
     height: 20em;
@@ -89,7 +89,7 @@ ul{
 }
 
 .copy--block{
-    background-color: rgba(0, 0, 0, 0.02);
+    background-color: rgba(0, 0, 0, 0.0);
     width:35em;
     margin: 0.5em 0em;
     height: 100%;
@@ -119,7 +119,7 @@ ul{
 
 }
 .image--block--contain{
-    background-color: rgba(0, 0, 0, 0.02);
+    background-color: rgba(0, 0, 0, 0.0);
     width:35em;
     margin: 0.5em 0em;
     height: 100%;
