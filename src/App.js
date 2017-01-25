@@ -28,6 +28,9 @@ export default class App extends Component{
                 <div className="footer-container">
                     <span className="footer-sign-off">Say Hi! <span className="footer-email">manhartjohn@gmail.com</span></span>
                     <div>
+                        <a href="https://manhart.io">
+                            <i className="fa fa-paper-plane-o fa-1x footer-icon" aria-hidden="true"></i>
+                        </a>
                         <a href="https://github.com/jmanhart">
                             <i className="fa fa-github fa-1x footer-icon"></i>
                         </a>
@@ -55,8 +58,20 @@ export default class App extends Component{
                         <a href="https://www.facebook.com/john.manhart.3">
                             <i className="fa fa-facebook fa-1x footer-icon" aria-hidden="true"></i>
                         </a>
+                        <a href="https://bitbucket.org/jmanhart/">
+                            <i className="fa fa-bitbucket fa-1x footer-icon" aria-hidden="true"></i>
+                        </a>
                         <a href="https://medium.com/@JohnManhart">
                             <i className="fa fa-medium fa-1x footer-icon" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.google.com/maps/contrib/118367922687104951096/reviews/@36.704712,-95.3483809,8z/data=!3m1!4b1!4m3!8m2!3m1!1e1">
+                            <i className="fa fa-map-marker fa-1x footer-icon" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://plus.google.com/u/0/118367922687104951096">
+                            <i className="fa fa-google-plus fa-1x footer-icon" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://my.playstation.com/John43Dillinger">
+                            <i className="fa fa-gamepad fa-1x footer-icon" aria-hidden="true"></i>
                         </a>
                     </div>
                 </div>

@@ -3,8 +3,8 @@ h1{
 }
 
 hr{
-    border-width: 0.05em;
-    border-color: rgba(0, 0, 0, 0.2);
+    border-width: 0.5px;
+    border-color: rgba(0, 0, 0, 0.09);
     width: 100%;
 }
 
@@ -27,25 +27,40 @@ ul{
     list-style-position: inside;
     list-style-type: disc;
 }
-.copy__header{
+.copy__hero{
     font-size: 1.75em;
+    line-height: 1.75em;
+    text-align: left;
+    width: 80%;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.0);
+}
+.copy__header{
+    font-size: 1.25em;
     line-height: 1.0em;
     margin: 0;
     padding:0;
     font-weight: bold;
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.7);
     background-color: rgba(0, 0, 0, 0.0);
 }
 .copy__subheader{
     font-size: 1.05em;
     line-height: 1.75em;
     font-weight: bold;
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.7);
     background-color: rgba(0, 0, 0, 0.0);
 }
+.copy__intro{
+    font-size: 1.0em;
+    line-height: 2.0em;
+    color: rgba(0, 0, 0, 0.8);
+    margin-bottom: 5em;
+}
 .copy__body{
-    font-size: 1em;
-    line-height: 1.75em;
+    font-size: 0.85em;
+    line-height: 1.85em;
     color: rgba(0, 0, 0, 0.8);
     background-color: rgba(0, 0, 0, 0.0);
 }
@@ -65,17 +80,26 @@ ul{
 
 /*--Hero Styles-----------------------------------------------*/
 .hero--block{
-    background-color: rgba(0, 0, 0, 0.1);
-    background-image: linear-gradient(100deg, #D11F3E, #6F1625);
+    /*background-color: rgba(0, 0, 0, 0.1);
+    background-image: linear-gradient(100deg, #D11F3E, #6F1625);*/
     width:100%;
     height: 20em;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
+    flex-direction: column;
 }
-
 .hero__image{
     width: 500px;
+}
+
+.hero__cta{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0.75em 0em;
+    padding: 0em 3em;
 }
 
 /*--Copy Styles-----------------------------------------------*/

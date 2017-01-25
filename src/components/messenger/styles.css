@@ -4,7 +4,9 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
     display: flex;
+    flex-direction: column;
 }
 .msgAll{
     background-color: rgba(0, 0, 0, 0.0);
@@ -123,4 +125,11 @@ input {
     align-items: center;
     justify-content: center;
     flex: 1;
+}
+
+.copy__prompt{
+    font-size: 0.6em;
+    margin-top:2.5em;
+    margin-bottom: 1.5em;   
+    color: rgba(0, 0, 0, 0.2);
 }

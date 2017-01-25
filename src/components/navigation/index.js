@@ -28,6 +28,10 @@ export default class Messenger extends Component{
 
                 <Link activeClassName="is-active" onlyActiveOnIndex={true} to="/" >
                     <span className="navigation-head">
+                        {/*
+                            <i className="fa fa-male fa-2x" aria-hidden="true"></i>
+                            <i className="fa fa-heart fa-2x" aria-hidden="true"></i>
+                            */}
                         <i className="fa fa-smile-o fa-2x" aria-hidden="true"></i>
                     </span>
                 </Link>
@@ -40,7 +44,7 @@ export default class Messenger extends Component{
                     </span>
                     <span className="navigation-label">
                         <Link activeClassName="is-active" to="/cobb">
-                            cobb
+                            cobb-connection
                         </Link>
                     </span>
                 </div>

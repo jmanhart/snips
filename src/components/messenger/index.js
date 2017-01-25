@@ -136,6 +136,8 @@ export default class Messenger extends Component{
                         <div className="test" ref="button" onClick={this.toggle}>
                             <div className="icon" ref="btnIcon"/>
                         </div>
+                        <span className="copy__prompt"> *Click, type, return, and watch!*</span>
+                        {/*<i className="fa fa-hand-o-down" aria-hidden="true"></i>*/}
                     </div>
                 </div>
             </div>
