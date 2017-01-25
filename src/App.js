@@ -73,6 +73,9 @@ export default class App extends Component{
                         <a href="https://my.playstation.com/John43Dillinger">
                             <i className="fa fa-gamepad fa-1x footer-icon" aria-hidden="true"></i>
                         </a>
+                        <a href="https://www.strava.com/athletes/2083068">
+                            <i className="fa fa-bicycle fa-1x footer-icon" aria-hidden="true"></i>
+                        </a>
                     </div>
                 </div>
             </div>
