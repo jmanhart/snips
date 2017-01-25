@@ -1,3 +1,8 @@
+.animated__wrapper{
+    opacity: 1;
+    transform: translateY(-90);
+}
+
 h1{
     font-size: 3em;
 }
@@ -30,8 +35,17 @@ ul{
 .copy__hero{
     font-size: 1.75em;
     line-height: 1.75em;
-    text-align: left;
+    text-align: center;
     width: 80%;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.0);
+}
+.copy__footer{
+    font-size: 1.75em;
+    line-height: 1.75em;
+    text-align: center;
+    width: 100%;
     font-weight: bold;
     color: rgba(0, 0, 0, 0.7);
     background-color: rgba(0, 0, 0, 0.0);
@@ -83,14 +97,15 @@ ul{
     /*background-color: rgba(0, 0, 0, 0.1);
     background-image: linear-gradient(100deg, #D11F3E, #6F1625);*/
     width:100%;
-    height: 20em;
+    height: 25em;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 .hero__image{
     width: 500px;
+    opacity: 1;
 }
 
 .hero__cta{
@@ -100,6 +115,17 @@ ul{
     width: 100%;
     margin: 0.75em 0em;
     padding: 0em 3em;
+}
+
+.hero--block--end{
+    width:100%;
+    height: 100%;
+    margin: 3em 0em;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+
 }
 
 /*--Copy Styles-----------------------------------------------*/
@@ -130,7 +156,7 @@ ul{
 /*--Image Styles-----------------------------------------------*/
 .image--block--full{
     background-color: rgba(0, 0, 0, 0.0);
-    width:100%;
+    width:80%;
     height: 100%;
     margin: 0.5em 0em;
     display: flex;
