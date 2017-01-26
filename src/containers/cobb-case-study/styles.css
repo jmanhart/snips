@@ -166,7 +166,6 @@ ul{
 }
 .block__image{
     width: 75%;
-
 }
 .image--block--contain{
     background-color: rgba(0, 0, 0, 0.0);
@@ -177,6 +176,17 @@ ul{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.video--block--contain{
+    background-color: rgb(28, 28, 38);
+    width:35em;
+    margin: 0.5em 0em;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
 }
 
 .image__fpo{

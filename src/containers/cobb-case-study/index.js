@@ -3,6 +3,7 @@ import {render} from 'react-dom';
 import dynamics from 'dynamics.js';
 import ReactDOM from 'react-dom';
 import { Link } from 'react-router';
+import Video from 'react-html5video';
 import './../../styles/styles.css';
 import {
     studyOnMount,
@@ -59,20 +60,12 @@ export default class CobbCaseStudy extends Component{
                                 <span className="image__label"> User Map of Exisiting App</span>
                             </div>
 
-                            <div className="image--block--contain">
-                                <video width="100%" controls
-                                  poster="https://archive.org/download/WebmVp8Vorbis/webmvp8.gif" >
-                                  <source
-                                    src="https://archive.org/download/WebmVp8Vorbis/webmvp8.webm"
-                                    type="video/webm" />
-                                  <source
-                                    src="https://archive.org/download/WebmVp8Vorbis/webmvp8_512kb.mp4"
-                                    type="video/mp4" />
-                                  <source
-                                    src="https://archive.org/download/WebmVp8Vorbis/webmvp8.ogv"
-                                    type="video/ogg" />
-                                  Your browser doesn't support HTML5 video tag.
-                                </video>
+
+                            <div className="video--block--contain">
+                                <Video autoPlay loop muted
+                                    poster="http://sourceposter.jpg" height="500px">
+                                    <source src="https://jmanhart.github.io/interactions/src/public/images/cobb-case-study/videos/vid-proto-guide.mov" type="video/mp4" />
+                                </Video>
                             </div>
 
 
