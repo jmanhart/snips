@@ -1,4 +1,4 @@
-# interactions!
+# Snips!
 
 [Live Site][LiveSite]  
 
@@ -97,7 +97,7 @@ I have included `webpack-dev-server` for testing changes locally. It can be acce
 
 
 <!-- manhart -->
-[LiveSite]: https://jmanhart.github.io/interactions/
+[LiveSite]: https://jmanhart.github.io/snips/
 
 <!-- links to within repo -->
 <!-- [404html]: https://github.com/rafrex/spa-github-pages/blob/gh-pages/404.html
