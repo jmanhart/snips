@@ -13,7 +13,7 @@ import CobbCaseStudy from './containers/cobb-case-study';
 // This will not be an issue cause still deving dingus
 
 const routes = (
-  <Route path="/" mapMenuTitle="Home" component={App}>
+  <Route path="/snips" mapMenuTitle="Home" component={App}>
     <IndexRoute component={Home}/>
     <Route path="/msg" mapMenuTitle="Example" component={MessageInteraction} />
     <Route path="/coffee" mapMenuTitle="Example" component={CoffeeShops} />

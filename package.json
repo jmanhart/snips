@@ -1,13 +1,13 @@
 {
-  "name": "Dude",
+  "name": "Snips",
   "version": "3.0.0",
-  "description": "Dude",
+  "description": "Manhart Snips!",
   "scripts": {
     "start": "webpack-dev-server -d --inline --host 0.0.0.0 --history-api-fallback --progress"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://jmanhart.github.io/interactions.git"
+    "url": "git+https://jmanhart.github.io/snips.git"
   },
   "author": "Dude",
   "license": "MIT",
