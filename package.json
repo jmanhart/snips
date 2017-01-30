@@ -38,6 +38,7 @@
     "style-loader": "^0.13.1",
     "react-dom": "^15.2.0",
     "webpack": "^1.14.0",
-    "webpack-dev-server": "^1.16.2"
+    "webpack-dev-server": "^1.16.2",
+    "underscore": "^1.8.3"
   }
 }

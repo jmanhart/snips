@@ -47,6 +47,11 @@ export default class Messenger extends Component{
                             cobb-connection
                         </Link>
                     </span>
+                    <span className="navigation-label">
+                        <Link activeClassName="is-active" to="/coffee">
+                            coffee shops
+                        </Link>
+                    </span>
                 </div>
 
             </div>

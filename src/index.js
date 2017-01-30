@@ -6,7 +6,7 @@ import App from './App';
 
 import Home from './containers/home';
 import MessageInteraction from './containers/message-interaction';
-import CardsInteraction from './containers/cards-interaction';
+import CoffeeShops from './containers/coffee-shops';
 import CobbCaseStudy from './containers/cobb-case-study';
 
 // Need to add the /interactions/ to have it ready for production
@@ -16,7 +16,7 @@ const routes = (
   <Route path="/" mapMenuTitle="Home" component={App}>
     <IndexRoute component={Home}/>
     <Route path="/msg" mapMenuTitle="Example" component={MessageInteraction} />
-    <Route path="/cards" mapMenuTitle="Example" component={CardsInteraction} />
+    <Route path="/coffee" mapMenuTitle="Example" component={CoffeeShops} />
     <Route path="/cobb" mapMenuTitle="Example" component={CobbCaseStudy} />
   </Route>
 );

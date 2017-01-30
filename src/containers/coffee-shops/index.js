@@ -5,7 +5,7 @@ import './../../styles/styles.css';
 
 import Cards from './../../components/cards'
 
-export default class CardsInteraction extends Component{
+export default class CoffeeShops extends Component{
     render(){
         return(
             <div className="cards-interaction">
