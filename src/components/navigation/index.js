@@ -26,7 +26,7 @@ export default class Messenger extends Component{
         return(
             <div className="navigation-container">
 
-                <Link activeClassName="is-active" onlyActiveOnIndex={true} to="/snips" >
+                <Link activeClassName="is-active" onlyActiveOnIndex={true} to="/" >
                     <span className="navigation-head">
                         <i className="fa fa-smile-o fa-2x" aria-hidden="true"></i>
                     </span>
@@ -40,14 +40,16 @@ export default class Messenger extends Component{
                     </span>
                     <span className="navigation-label">
                         <Link activeClassName="is-active" to="/snips/cobb">
-                            cobb-connection
+                            cobb
                         </Link>
                     </span>
+                    {/*
                     <span className="navigation-label">
                         <Link activeClassName="is-active" to="/snips/coffee">
                             coffee shops
                         </Link>
                     </span>
+                    */}
                 </div>
 
             </div>

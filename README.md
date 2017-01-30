@@ -4,11 +4,12 @@
 
 Build using [React][react], [Webpack][webpackProduction], and [Github Pages][ghPagesOverview].
 
-
+<!--
 #Change going from DEV to Production
 
     ##./src/index.js !
     - Route Paths to="PATH" (needs to be /snips/)
+    - don't need to eliminate /snips/ part in here
 
     ##components/navigation/index.js !
     - to="PATH" (needs to be /snips/)
@@ -20,7 +21,7 @@ Build using [React][react], [Webpack][webpackProduction], and [Github Pages][ghP
     ## webpack -p !
 
     ## commit and push to Master
-
+ -->
 
 <!-- manhart -->
 [LiveSite]: https://jmanhart.github.io/snips/

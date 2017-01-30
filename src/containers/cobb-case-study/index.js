@@ -46,44 +46,62 @@ export default class CobbCaseStudy extends Component{
 
                     <div className="copy--content">
 
+                        <div className="copy--block">
+                            <span className="copy__header">Understanding Cobb</span>
+                            <hr/>
+                            <span className="copy__body">
+                                Cobb-Vantress is the global leader in poultry research and production, with that clients span across the globe. Having offline accesse to their roubust library of artciles, guides, and tools is a must. This requires a native application that must be supported on iOS and Android. Cobb tasked the team at Marlin to re imagine their exsisting app from the ground up to better help their needs. This re-build included a new Development Stack & Cycle and UX/UI ideation.
+                            </span>
+                        </div>
+
                         {/*Reserach on exsiting app*/}
                         <div className="copy--block">
-                            <span className="copy__header">UX Phase</span>
+                            <span className="copy__header">Research & Audit of Exsisting App</span>
                             <hr/>
-                            <span className="copy__subheader">Research of Exsisting App</span>
                             <span className="copy__body">
-                                First course of actions was an experience audit of the current Cobb-Connection App.
-                                The current UX solution was very chaotic and not consistent. There was no style guide concering images or type, and as a whole felt very disjointed and confusing. The User would encountered many hard stops requiring an action and multiple levels of naviagtion that required multiple steps back.
+                                The first course of action was a total experience audit of the exsisting Application. We started by mapping out all the flows of the App, analyzing analytics, and collecting the exsising graphics and styles. With this information we came to some conclusions regarding UX and adoption.
+                                <ol>
+                                    <li>
+                                        <span className="copy__bullet">UI Language Selection</span> – The most glaring broken feature was requiring the user to select their language on every App open this creates a very un-nessecary bottle neck for every User every time.
+                                    </li>
+                                    <li>
+                                        <span className="copy__bullet">App structure</span> – The App structure was very rigid and dependent on numerous naviagtion loops, such as back arrows, and entire resets when navigating to a new section.
+                                    </li>
+                                    <li>
+                                        <span className="copy__bullet">Content Structure</span> – The exisiting app was dependent on very rigid buckets for content. It had to many catagories that yeiled few if any results.
+                                    </li>
+                                    <li>
+                                        <span className="copy__bullet">Content Filtering</span> – Adding the ability for rapid filtering and serving content was essential with the new direction of the App.
+                                    </li>
+                                    <li>
+                                        <span className="copy__bullet">Tools</span> – Creating a style and set of actions for tools and improving the usability.
+                                    </li>
+                                </ol>
                             </span>
                             <div className="image--block--contain">
                                 <img src="https://jmanhart.github.io/interactions/src/public/images/cobb-case-study/wires-old-app.jpg"/>
-                                <span className="image__label"> User Map of Exisiting App</span>
+                                <span className="image__label">User Map of Exisiting App</span>
                             </div>
+                            <span className="copy__close"> * * * </span>
+                        </div>
 
-
+                        {/*UI Language Selection*/}
+                        <div className="copy--block">
+                            <span className="copy__header">UX Phase</span>
+                            <hr/>
+                            <span className="copy__subheader">Improving the UI Language Selection</span>
+                            <span className="copy__body">
+                                The most glaring problem with the previous interation of the App was the User having to select the their language on App load. First we solved this problem was to default the Users language to their native phone language. Second we allowed created the ability for the User to change their UI language by adding a method in the Top Navigation bar to do so on any page.
+                            </span>
+                            <div className="image--block--contain">
+                                <img src="https://jmanhart.github.io/interactions/src/public/images/cobb-case-study/wires-lang.jpg"/>
+                                <span className="image__label">UI language selection wireframe</span>
+                            </div>
                             <div className="video--block--contain">
                                 <Video autoPlay loop muted
                                     poster="http://sourceposter.jpg" height="500px">
-                                    <source src="https://jmanhart.github.io/interactions/src/public/images/cobb-case-study/videos/vid-proto-guide.mov" type="video/mp4" />
+                                    <source src="https://jmanhart.github.io/interactions/src/public/images/cobb-case-study/videos/vid-proto-lang.mov" type="video/mp4" />
                                 </Video>
-                            </div>
-
-
-
-                        </div>
-
-                        {/* New Architecture -----------------------------*/}
-                        <div className="copy--block">
-                            <span className="copy__subheader">Creating the new Architecture</span>
-                            <div className="image--block--contain">
-                                <img src="https://jmanhart.github.io/interactions/src/public/images/cobb-case-study/sketch-random.jpg"/>
-                            </div>
-                            <span className="copy__body">
-                                The exsiting consisted of many hard stops concering navigation. On each load the user would select their language and move on to a nother page to filter down to their desired content. We decided to go with the [APPLE] and [GOOGLE] standard model of using a bottm tabbed navigation model to allow for ease and quick navigation.
-                            </span>
-                            <div className="image--block--contain">
-                                <img src="https://jmanhart.github.io/interactions/src/public/images/cobb-case-study/wires-all.jpg"/>
-                                <span className="image__label">Exploring Different Tab Navigation Solutions</span>
                             </div>
                         </div>
 
@@ -97,48 +115,66 @@ export default class CobbCaseStudy extends Component{
                                 <img src="https://jmanhart.github.io/interactions/src/public/images/cobb-case-study/wires-tabs.jpg"/>
                                 <span className="image__label">Exploring Different Tab Navigation Solutions</span>
                             </div>
+                            <div className="video--block--contain">
+                                <Video autoPlay loop muted
+                                    poster="http://sourceposter.jpg" height="500px">
+                                    <source src="https://jmanhart.github.io/interactions/src/public/images/cobb-case-study/videos/vid-proto-tabs.mov" type="video/mp4" />
+                                </Video>
+                            </div>
                         </div>
 
-                        {/*UI Language Selection*/}
+                        {/* New Architecture -----------------------------*/}
                         <div className="copy--block">
-                            <span className="copy__subheader">Improving the Language Selection</span>
+                            <span className="copy__subheader">Refining Content Structure</span>
                             <span className="copy__body">
-                                The most glaring problem with the previous interation of the App was the User having to select the their language on App load. First we solved this problem was to default the Users language to their native phone language. Second we allowed created the ability for the User to change their UI language by adding a method in the Top Navigation bar to do so on any page.
+                                The exsiting consisted of many hard stops concering navigation. On each load the user would select their language and move on to a nother page to filter down to their desired content. We decided to go with the [APPLE] and [GOOGLE] standard model of using a bottm tabbed navigation model to allow for ease and quick navigation.
                             </span>
                             <div className="image--block--contain">
-                                <img src="https://jmanhart.github.io/interactions/src/public/images/cobb-case-study/wires-lang.jpg"/>
-                                <span className="image__label">UI language selection wireframe</span>
+                                <img src="https://jmanhart.github.io/interactions/src/public/images/cobb-case-study/sketch-random.jpg"/>
+                                <span className="image__label">Refining Content Structure</span>
+                            </div>
+                            <div className="image--block--contain">
+                                <img src="https://jmanhart.github.io/interactions/src/public/images/cobb-case-study/wires-all.jpg"/>
+                                <span className="image__label">Wireframes of all Content</span>
                             </div>
                         </div>
 
                         {/*Content Filtering*/}
                         <div className="copy--block">
                             <span className="copy__subheader">Developing Content Filtering</span>
+                            <span className="copy__body">
+                                Cobb has an ever growing library of hundrends of guides for their customers, and adding the ability to filter and serve content was a must.
+                            </span>
                             <div className="image--block--contain">
                                 <img src="https://jmanhart.github.io/interactions/src/public/images/cobb-case-study/sketch-filtering.jpg"/>
+                                <span className="image__label">Inital Sketchs of Filtering Functionality</span>
                             </div>
-                            <span className="copy__body">
-                                An added feature requested by the client was a method to filter all their guides by type and
-                            </span>
                             <div className="image--block--contain">
                                 <img src="https://jmanhart.github.io/interactions/src/public/images/cobb-case-study/wires-guide-lang.jpg"/>
                                 <span className="image__label">UI language selection wireframe</span>
+                            </div>
+                            <div className="video--block--contain">
+                                <Video autoPlay loop muted
+                                    poster="http://sourceposter.jpg" height="500px">
+                                    <source src="https://jmanhart.github.io/interactions/src/public/images/cobb-case-study/videos/vid-proto-guide.mov" type="video/mp4" />
+                                </Video>
                             </div>
                         </div>
 
                         {/*Creating User Tools*/}
                         <div className="copy--block">
-                            <span className="copy__subheader">05 – User Tools for Production</span>
-                            <div className="image--block--contain">
-                                <img src="https://jmanhart.github.io/interactions/src/public/images/cobb-case-study/sketch-one.jpg"/>
-                            </div>
+                            <span className="copy__subheader">User Tools for Production</span>
                             <span className="copy__body">
                                 Woke vegan raclette flannel, banh mi shoreditch occupy readymade af crucifix pop-up ramps fingerstache keffiyeh post-ironic. Post-ironic biodiesel four dollar toast mustache, whatever wolf poke tofu +1 ethical. Cronut pok pok small batch, sriracha food truck leggings beard deep v pop-up meditation echo park. Food truck blog mumblecore air plant flexitarian umami. Chambray ramps snackwave, thundercats street art gentrify 3 wolf moon DIY. Chillwave DIY occupy cliche stumptown affogato. Mlkshk fap tousled, humblebrag next level waistcoat chicharrones etsy shoreditch.
                             </span>
                             <div className="image--block--contain">
+                                <img src="https://jmanhart.github.io/interactions/src/public/images/cobb-case-study/sketch-one.jpg"/>
+                            </div>
+                            <div className="image--block--contain">
                                 <img src="https://jmanhart.github.io/interactions/src/public/images/cobb-case-study/wires-tools.jpg"/>
                                 <span className="image__label">Wireframes of the three tools</span>
                             </div>
+                            <span className="copy__close"> * * * </span>
                         </div>
 
 
