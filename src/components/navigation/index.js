@@ -28,10 +28,6 @@ export default class Messenger extends Component{
 
                 <Link activeClassName="is-active" onlyActiveOnIndex={true} to="/snips" >
                     <span className="navigation-head">
-                        {/*
-                            <i className="fa fa-male fa-2x" aria-hidden="true"></i>
-                            <i className="fa fa-heart fa-2x" aria-hidden="true"></i>
-                            */}
                         <i className="fa fa-smile-o fa-2x" aria-hidden="true"></i>
                     </span>
                 </Link>
