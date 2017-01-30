@@ -16,8 +16,8 @@ const routes = (
   <Route path="/snips" mapMenuTitle="Home" component={App}>
     <IndexRoute component={Home}/>
     <Route path="/snips/msg" mapMenuTitle="Example" component={MessageInteraction} />
-    <Route path="/snips/coffee" mapMenuTitle="Example" component={CoffeeShops} />
     <Route path="/snips/cobb" mapMenuTitle="Example" component={CobbCaseStudy} />
+    <Route path="/snips/coffee" mapMenuTitle="Example" component={CoffeeShops} />
   </Route>
 );
 
