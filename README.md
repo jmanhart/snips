@@ -8,11 +8,11 @@ Build using [React][react], [Webpack][webpackProduction], and [Github Pages][ghP
 #Change going from DEV to Production
 
     ##./src/index.js !
-    - Route Paths to="PATH" (needs to be /snips/)
-    - don't need to eliminate /snips/ part in here
+    - <Route path="/snips" mapMenuTitle="Home" component={App}>
 
     ##components/navigation/index.js !
-    - to="PATH" (needs to be /snips/)
+    - Set only Root to="PATH" (needs to be /snips/)
+    - don't need to eliminate /snips/ part in here
 
     ##./index.js !
     - font-awesome path to /snips/

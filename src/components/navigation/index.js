@@ -26,7 +26,7 @@ export default class Messenger extends Component{
         return(
             <div className="navigation-container">
 
-                <Link activeClassName="is-active" onlyActiveOnIndex={true} to="/" >
+                <Link activeClassName="is-active" onlyActiveOnIndex={true} to="/snips" >
                     <span className="navigation-head">
                         <i className="fa fa-smile-o fa-2x" aria-hidden="true"></i>
                     </span>
