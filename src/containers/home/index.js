@@ -28,16 +28,6 @@ export default class Home extends Component{
         return(
             <div className="hero-container">
                 <div className="hero-content">
-                    {/*{data.map((item) => {
-                        return (
-                            <div className="hero-card-container">
-                                <div className="hero-card-content">
-
-                                </div>
-                                <span className="card-label" key={item.title}>{item.title}</span>
-                            </div>
-                        )
-                    })}*/}
                 </div>
             </div>
         )

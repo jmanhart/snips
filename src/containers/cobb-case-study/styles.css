@@ -51,7 +51,7 @@ ul{
     background-color: rgba(0, 0, 0, 0.0);
 }
 .copy__header{
-    font-size: 1.25em;
+    font-size: 1.5em;
     line-height: 1.0em;
     margin: 0;
     padding:0;
@@ -60,7 +60,7 @@ ul{
     background-color: rgba(0, 0, 0, 0.0);
 }
 .copy__subheader{
-    font-size: 1.05em;
+    font-size: 1.3em;
     line-height: 1.75em;
     font-weight: bold;
     color: rgba(0, 0, 0, 0.7);
@@ -73,7 +73,7 @@ ul{
     margin-bottom: 5em;
 }
 .copy__body{
-    font-size: 0.85em;
+    font-size: 1.1em;
     line-height: 1.85em;
     color: rgba(0, 0, 0, 0.8);
     background-color: rgba(0, 0, 0, 0.0);
@@ -94,6 +94,52 @@ ul{
 .copy__close{
     text-align: center;
     color: rgba(0, 0, 0, 0.4);
+}
+
+@media only screen and (max-width: 800px) {
+    .copy__hero{
+        font-size: 100%;
+        line-height: 1.75em;
+        text-align: center;
+        width: 80%;
+    }
+    .copy__footer{
+        font-size: 100%;
+        line-height: 1.75em;
+    }
+    .copy__header{
+        font-size: 100%;
+        line-height: 1.0em;
+        margin: 0;
+        padding:0;
+    }
+    .copy__subheader{
+        font-size: 100%;
+        line-height: 150%;
+    }
+    .copy__intro{
+        font-size:100%;
+        line-height: 2.0em;
+        color: rgba(0, 0, 0, 0.8);
+        margin-bottom: 5em;
+    }
+    .copy__body{
+        font-size: 70%;
+        line-height: 1.85em;
+    }
+    .image__label{
+        font-size: 60%;
+        line-height: 1.5em;
+        padding: 0.75em 0em;
+    }
+    .copy__bullet{
+        font-size: 100%;
+        line-height: 1.75em;
+    }
+
+    .hero__image{
+        width: 60%;
+    }
 }
 
 
@@ -157,6 +203,16 @@ ul{
     .copy--block{
         width: 85%;
     }
+    .cobb-case-study{
+        width: 95%;
+
+    }
+    .video--block--contain{
+        width: 95%;
+    }
+    .image--block--contain{
+        width: 95%;
+    }
 }
 
 /*--Image Styles-----------------------------------------------*/
@@ -175,7 +231,7 @@ ul{
 }
 .image--block--contain{
     background-color: rgba(0, 0, 0, 0.0);
-    width:35em;
+    max-width:35em;
     margin: 0.5em 0em;
     height: 100%;
     display: flex;
@@ -186,7 +242,7 @@ ul{
 
 .video--block--contain{
     background-color: rgb(28, 28, 38);
-    width:35em;
+    max-width: 35em;
     margin: 0.5em 0em;
     height: 50%;
     display: flex;
