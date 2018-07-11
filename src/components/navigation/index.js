@@ -27,20 +27,20 @@ export default class Messenger extends Component{
             <div className="navigation-container">
 
                 <Link activeClassName="is-active" onlyActiveOnIndex={true} to="/snips" >
-                    <span className="navigation-head">
-                        <i className="fa fa-smile-o fa-2x" aria-hidden="true"></i>
+                    <span className="branding">
+                        ✌️ Manhart
                     </span>
                 </Link>
 
                 <div className="internal-links">
                     <span className="navigation-label">
-                        <Link activeClassName="is-active" to="/snips/msg">
-                            messenger
+                        <Link activeClassName="is-active" to="/mosey">
+                            Mosey
                         </Link>
                     </span>
                     <span className="navigation-label">
-                        <Link activeClassName="is-active" to="/snips/cobb">
-                            cobb
+                        <Link activeClassName="is-active" to="/cobb">
+                            Cobb
                         </Link>
                     </span>
                     {/*
@@ -65,7 +65,7 @@ export default class Messenger extends Component{
 
     {/*<div className="external-links">
         <span className="navigation-github">
-        <a href="https://github.com/jmanhart/interactions">
+        <a href="https://github.com/jmanhart/snips">
         to github!
         </a>
         </span>

@@ -11,7 +11,7 @@ export default class MessageInteraction extends Component{
             <div className="messenger-interaction">
                 <Messenger />
                 <div className="notes">
-                    <img src="https://jmanhart.github.io/interactions/src/public/images/messenger-01.png"/>
+                    <img src="https://jmanhart.github.io/snips/src/public/images/messenger-01.png"/>
                 </div>
             </div>
         )
