@@ -16,9 +16,9 @@ import MoseyCaseStudy from './containers/mosey-case-study';
 const routes = (
   <Route path="/" mapMenuTitle="Home" component={App}>
     <IndexRoute component={Home}/>
-    <Route path="/msg" mapMenuTitle="Example" component={MessageInteraction} />
-    <Route path="/cobb" mapMenuTitle="Example" component={CobbCaseStudy} />
-    <Route path="/mosey" mapMenuTitle="Example" component={MoseyCaseStudy} />
+    <Route path="/snips/msg" mapMenuTitle="Example" component={MessageInteraction} />
+    <Route path="/snips/cobb" mapMenuTitle="Example" component={CobbCaseStudy} />
+    <Route path="/snips/mosey" mapMenuTitle="Example" component={MoseyCaseStudy} />
   </Route>
 );
 
